@@ -1,0 +1,11 @@
+body{
+    background-image: url("end.jpg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-color:black;
+}
+
+#restart{
+    position: relative;
+    left: 25%;
+}

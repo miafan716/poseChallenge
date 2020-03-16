@@ -1,0 +1,36 @@
+body {
+    margin: 0 ;
+    background-color: black;
+}
+
+/* This rule isn't used in the project as distributed, because the JavaScript
+code hides the video element. */
+body video {
+    position: absolute;
+    opacity:1;
+}
+
+#status{
+    font-family: 'Spartan',serif;
+    font-size: 50px;
+    color: black;
+    left: 500;
+    opacity: 1;
+}
+
+#instruction{
+    font-family: 'Spartan',serif;
+    font-size: 25px;
+    color: white;
+    opacity: 1;
+}
+
+p{color: white;}
+
+#UI{
+    width: 1600px;
+    left: 80px;
+    position: relative;
+    text-align: center;
+    display: flex;
+}
