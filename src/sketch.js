@@ -36,7 +36,6 @@ let score = 0;
 
 function preload() {
   img = loadImage('0.png');
-  start = loadImage('start.jpg');
 }
 
 function setup() {
