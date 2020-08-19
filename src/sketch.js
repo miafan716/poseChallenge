@@ -33,6 +33,9 @@ let frm = 0;
 // Draw the score bar
 let score = 0;
 
+//20200819 modified
+let active = false;
+
 
 function preload() {
   img = loadImage('0.png');
@@ -267,7 +270,7 @@ function gotResults(error, result, targetLabel) {
     // select('#confidence7').html(`${confidences['7'] ? confidences['7'] * 100 : 0} %`);   
     // select('#confidence8').html(`${confidences['8'] ? confidences['8'] * 100 : 0} %`);   
 
-    for (targetLabel = 1; targetLabel ++; targetLabel < 8) {
+    for (active == true; targetLabel = 1; targetLabel ++; targetLabel < 8) {
       console.log('this is the result label:'+result.label);
         if (str(targetLabel) == str(result.label)){
         score += 1;
@@ -389,13 +392,16 @@ function drawKeypoints() {
       // Start classifying
       frm = frameCount;
       goin_b = true;
-      classify();
+      active = true;
+      console.log(active == true);
     }
   } else {
     goin_b = true;
   }
   pop();
 }
+
+
 
 // A function to draw the skeletons
 function drawSkeleton() {
